@@ -21,21 +21,21 @@ function bubbleSort(array) {
 console.log('bubbleSort..', bubbleSort(unsortedArr));
 
 
-// function bubbleAgain(array) {
-//   var swapped = false;
-//   var tempArr = [];
-//   do {
-//     for ( var i = 0; i < array.length; i++ ) {
-//     if ( array[i] > array[i+1] ) {
-//       tempArr = array[i];
-//       array[i] = array[i+1];
-//       array[i+1] = tempArr;
-//       swapped = true;
-//       }
-//     }
-//   }
-//   while(swapped);
-//   return array;
-// }
+function bubbleAgain(array) {
+  var swapped = false;
+  var tempArr = [];
+  do {
+    for ( var i = 0; i < array.length; i++ ) {
+    if ( array[i] > array[i+1] ) {
+      tempArr = array[i];
+      array[i] = array[i+1];
+      array[i+1] = tempArr;
+      swapped = true;
+      }
+    }
+  }
+  while(swapped);
+  return array;
+}
 
-// console.log('bubbleAgain..', bubbleAgain(unsortedArr));
+console.log('bubbleAgain..', bubbleAgain(unsortedArr));
